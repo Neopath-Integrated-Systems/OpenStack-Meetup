@@ -18,4 +18,4 @@ print "enviando fotos para o storage"
 for object_name, file_path in pets.items():
         cloud.create_object(container=container_name, name=object_name, filename=file_path)
 
-print "objetos add com sucesso!"
+print "objetos adicionados com sucesso!"
