@@ -46,11 +46,11 @@ print ("\n grupo criado com sucesso " + cloud.get_security_group(sec_group_name)
 
 # Criando parametros das instancias
 # Escolhendo e verificando os parametros contidos na nuvem.
-image_name = 'ubuntu_x64'
+image_name = 'nome_minha_imagem'
 image = cloud.get_image(image_name)
-flavor_name = 'pequeno'
+flavor_name = 'nome_meu_flavor'
 flavor = cloud.get_flavor(flavor_name)
-rede_name = "interno"
+rede_name = "nome_minha_rede"
 rede = cloud.get_network(rede_name)
 
 print("\n ID da imagem: " + image.id + '\n')
