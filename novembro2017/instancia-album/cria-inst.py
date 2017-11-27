@@ -64,5 +64,5 @@ instance_name = 'minha-aplicacao-balanceada'
 
 print ("\n criando instancia")
 
-cloud.create_server(instance_name, image=image_name, flavor=flavor_name, wait=True, auto_ip=False, key_name=keypair_name, security_groups=[sec_group_name], network=rede_name, userdata=ex_userdata, min_count=2, max_count=6)
+cloud.create_server(instance_name, image=image_name, flavor=flavor_name, wait=True, auto_ip=True, key_name=keypair_name, security_groups=[sec_group_name], network=rede_name, userdata=ex_userdata)
 print ("\n instancia criada com sucesso \n script finalizado.")
