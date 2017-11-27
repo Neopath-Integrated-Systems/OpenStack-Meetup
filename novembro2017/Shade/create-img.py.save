@@ -1,0 +1,15 @@
+# Codigo para criacao de uma imagem de SO
+# no Openstack, utiizando a biblioteca Shade.
+
+import shade
+# Habilitando o modo debug (opcional)
+shade.simple_logging(debug=True)
+
+# Iniciando  o objeto de conexao com o Openstack
+cloud = shade.openstack_cloud(cloud='envvars')
+
+# Criando a imagem no 
+image = cloud.create_image('nome_imagem', filename='./minha_img.qcow2', wait=True)
+
+print "imagem criada com sucesso!"
+
